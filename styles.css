@@ -380,7 +380,7 @@ button, input, textarea { font: inherit; }
   
   /* About / Facts */
   .profile-facts { grid-template-columns: 1fr; border-top: none; gap: 12px; margin-top: 32px; }
-  .fact { border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; flex-direction: row; justify-content: space-between; align-items: center; }
+  .fact { border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 6px; }
   .fact:nth-child(odd) { padding-right: 20px; }
   .fact span { margin: 0; }
   
