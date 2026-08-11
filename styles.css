@@ -270,6 +270,8 @@ button, input, textarea { font: inherit; }
 .tag-row { display:flex; flex-wrap:wrap; gap:8px; margin-top: 18px; }
 .tag-row span { padding: 7px 10px; background: var(--sand); font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; }
 
+.project-full-image { width: 100%; height: auto; border-radius: 12px; margin-top: 36px; box-shadow: 0 16px 40px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.06); display: block; }
+
 .timeline { max-width: 900px; margin: 0 auto; position: relative; }
 .timeline::before { content:""; position:absolute; left: 151px; top: 0; bottom: 0; width: 1px; background: rgba(63,43,32,.25); }
 .timeline-item { display:grid; grid-template-columns: 150px 1fr; gap: 46px; position:relative; margin-bottom: 46px; }
@@ -296,10 +298,13 @@ button, input, textarea { font: inherit; }
 .achievements-section .section-note { color: rgba(255,255,255,.66); }
 .achievements-section .section-number { border-color: rgba(255,255,255,.28); }
 .achievement-grid { display:grid; grid-template-columns: repeat(3,1fr); border-top:1px solid rgba(255,255,255,.18); border-left:1px solid rgba(255,255,255,.18); }
-.achievement-card { min-height: 260px; padding: 34px; border-right:1px solid rgba(255,255,255,.18); border-bottom:1px solid rgba(255,255,255,.18); }
+.achievement-card { min-height: 260px; padding: 34px; border-right:1px solid rgba(255,255,255,.18); border-bottom:1px solid rgba(255,255,255,.18); display: flex; flex-direction: column; }
 .award-no { color:#d8a77f; font-family:Georgia,serif; font-size:1.8rem; }
 .achievement-card h3 { font-family:Georgia,serif; font-size:1.5rem; font-weight:500; margin: 24px 0 12px; }
 .achievement-card p { color:rgba(255,255,255,.72); margin:0; font-size:.94rem; }
+.achievement-gallery { margin-top: auto; padding-top: 24px; display: flex; gap: 12px; }
+.achievement-gallery img { flex: 1; min-width: 0; height: 120px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); opacity: 0.85; transition: opacity 0.3s ease; }
+.achievement-gallery img:hover { opacity: 1; }
 
 .contact-section { background: #20261f; color:#fff; }
 .contact-grid { display:grid; grid-template-columns: 45% 55%; gap: 90px; }
